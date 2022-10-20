@@ -55,6 +55,14 @@ function generateMarkdown(
 
   ${description}
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contribute](#contribute)
+- [Tests](#tests)
+
 ## Installation
 
   ${install}
@@ -67,7 +75,7 @@ function generateMarkdown(
 
   ${renderLicenseSection(license)} ${renderLicenseLink(license)}
 
-## How to Contribute
+## Contribute
 
   ${contribute}
 
