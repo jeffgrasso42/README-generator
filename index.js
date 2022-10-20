@@ -64,10 +64,10 @@ const init = () => {
         choices: 
           [
             'none',
-            'Academic Free License v3.0',
+            'Mozilla Public License 2.0',
             'Apache license 2.0',
             'MIT',
-            'PostgreSQL License',
+            'The Perl License',
             0
           ],
         name: 'license'
