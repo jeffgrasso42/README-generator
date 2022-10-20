@@ -2,13 +2,13 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case 'Mozilla Public License 2.0': 
-      return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)]`
+      return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`
     case 'Apache license 2.0': 
-      return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`
+      return `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`
     case 'MIT': 
-      return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`
+      return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`
     case 'The Perl License': 
-      return `[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)]`
+      return `![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)`
     default:
       return '';
   }

@@ -14,6 +14,14 @@ const questions = [
   "Select Liscence: "
 ];
 
+const licenseArray = [
+  'none',
+  'Mozilla Public License 2.0',
+  'Apache license 2.0',
+  'MIT',
+  'The Perl License',
+]
+
 // FUNCTIONS
 
 // create README.md file with the generated markdown in it
@@ -61,15 +69,7 @@ const init = () => {
       {
         type: 'list',
         message: questions[6],
-        choices: 
-          [
-            'none',
-            'Mozilla Public License 2.0',
-            'Apache license 2.0',
-            'MIT',
-            'The Perl License',
-            0
-          ],
+        choices: licenseArray,
         name: 'license'
       }
     ]).then(response => {
