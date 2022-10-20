@@ -14,8 +14,7 @@ function renderLicenseBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// get license link for license
 function renderLicenseLink(license) {
   switch (license) {
     case 'Mozilla Public License 2.0': 
@@ -28,13 +27,16 @@ function renderLicenseLink(license) {
       return `(https://opensource.org/licenses/Artistic-2.0)`
     default:
       return '';
+  }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+// get license section content for license
+function renderLicenseSection(license) {
+  if (license === 'none') return 'N/A';
+  else return `This application uses the ${license}`;
+}
 
-// TODO: Create a function to generate markdown for README
+// markdown for README
 function generateMarkdown(
   // destructure argument
   { 
