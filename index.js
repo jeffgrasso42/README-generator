@@ -33,6 +33,7 @@ function writeToFile(fileName, data) {
 
 // USER INTERACTION
 
+// get user inputs with inquirer prompts
 const init = () => {
   inquirer
     .prompt([
@@ -80,4 +81,5 @@ const init = () => {
 
 // INITIALIZATION
 
+// run program 
 init();
