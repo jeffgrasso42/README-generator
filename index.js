@@ -1,11 +1,9 @@
-// TODO: Include packages needed for this application
 // DEPENDENCIES
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // DATA
-// TODO: Create an array of questions for user input
 const questions = [
   "Enter the title of your project: ",
   "Enter a description of your project: ",
@@ -16,14 +14,17 @@ const questions = [
   "Select Liscence: "
 ];
 
-// TODO: Create a function to write README file
+// FUNCTIONS
+
+// create README.md file with the generated markdown in it
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     err ? console.error(err) : console.log('Success!');
   });
 }
 
-// TODO: Create a function to initialize app
+// USER INTERACTION
+
 const init = () => {
   inquirer
     .prompt([
@@ -77,5 +78,6 @@ const init = () => {
     })
 }
 
-// Function call to initialize app
+// INITIALIZATION
+
 init();
