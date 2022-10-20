@@ -17,7 +17,9 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data);
+}
 
 // TODO: Create a function to initialize app
 const init = () => {
@@ -62,11 +64,14 @@ const init = () => {
             'Academic Free License v3.0',
             'Apache license 2.0',
             'MIT',
-            'PostgreSQL License'
-          ]
+            'PostgreSQL License',
+            0
+          ],
+        name: 'license'
       }
     ]).then(response => {
-      data = generateMarkdown(data);
+      readMeString = generateMarkdown(response);
+      writeToFile('README.md', readMeString)
     })
 }
 
