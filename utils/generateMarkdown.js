@@ -36,6 +36,11 @@ function renderLicenseSection(license) {
   else return `This application uses the ${license}`;
 }
 
+function renderQuestionsSection(github, email) {
+  message = `If you have any questions, contact me through my GitHub profile: ${github} or reach me by email at: ${email}`
+  return message;
+}
+
 // markdown for README
 function generateMarkdown(
   // destructure argument
@@ -46,7 +51,9 @@ function generateMarkdown(
     usage,
     contribute,
     test,
-    license
+    license,
+    github,
+    email
   }
 ) {
   return `# ${title}
@@ -59,11 +66,12 @@ function generateMarkdown(
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contribute](#contribute)
-- [Tests](#tests)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contribute](#contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Installation
 
@@ -84,6 +92,10 @@ function generateMarkdown(
 ## Tests
 
   ${test}
+
+## Questions
+
+  ${renderQuestionsSection(github, email)}
 
 `;
 }
