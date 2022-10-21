@@ -1,6 +1,6 @@
 # README Generator by Jeff Grasso
 
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 ## Description
 
@@ -8,11 +8,12 @@
 
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Contribute](#contribute)
-- [Tests](#tests)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contribute](#contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Installation
 
@@ -24,7 +25,7 @@
 
 ## License
 
-  This application uses the MIT (https://opensource.org/licenses/MIT)
+  This application uses the Apache license 2.0 (https://opensource.org/licenses/Apache-2.0)
 
 ## Contribute
 
@@ -33,4 +34,8 @@
 ## Tests
 
   try running the program multiple times with different responses and selecting different licenses
+
+## Questions
+
+  If you have any questions, contact me through my GitHub profile: https://github.com/jeffgrasso42 or reach me by email at: jeff@example.com
 
