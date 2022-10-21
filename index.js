@@ -5,13 +5,15 @@ const generateMarkdown = require('./utils/generateMarkdown.js')
 
 // DATA
 const questions = [
-  "Enter the title of your project: ",
-  "Enter a description of your project: ",
-  "Enter Installation instructions for your project: ",
-  "Enter Usage information for your project: ",
-  "Enter Contribution guidelines for your project: ",
-  "Enter Testing instructions for your project: ",
-  "Select Liscence: "
+  "Enter the title of your project:",
+  "Enter a description of your project:",
+  "Enter Installation instructions for your project:",
+  "Enter Usage information for your project:",
+  "Enter Contribution guidelines for your project:",
+  "Enter Testing instructions for your project:",
+  "Select Liscence:",
+  "Enter Github Username:",
+  "Enter email address:"
 ];
 
 const licenseArray = [
@@ -72,6 +74,16 @@ const init = () => {
         message: questions[6],
         choices: licenseArray,
         name: 'license'
+      },
+      {
+        type: 'input',
+        message: questions[7],
+        name: 'github',
+      },
+      {
+        type: 'input',
+        message: questions[8],
+        name: 'email',
       }
     ]).then(response => {
       readMeString = generateMarkdown(response);
